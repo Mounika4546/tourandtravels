@@ -1,4 +1,5 @@
 import React from 'react';
+import experienceImg from '../assets/images/experience.png'; // ✅ adjust based on folder location
 
 const Experience = () => {
   return (
@@ -35,7 +36,7 @@ const Experience = () => {
         {/* Right Side - Image */}
         <div className="relative">
           <img
-            src="/src/assets/images/experience.png" 
+            src={experienceImg}
             alt="Experience"
             className="w-full h-auto rounded-lg"
             style={{ maxWidth: '80%' }}
@@ -54,4 +55,3 @@ const Experience = () => {
 };
 
 export default Experience;
-

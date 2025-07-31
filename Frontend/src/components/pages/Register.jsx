@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import register from '../../assets/images/register.png';
 const Register = () => {
   const [formData, setFormData] = useState({
     username: '',
@@ -48,7 +48,7 @@ const Register = () => {
         {/* Left Side: Illustration */}
         <div className="w-1/2 p-6 bg-orange-100 rounded-l-lg flex items-center justify-center">
           <img
-            src="/src/assets/images/register.png"
+            src={register}
             alt="Illustration"
             className="w-full"
           />

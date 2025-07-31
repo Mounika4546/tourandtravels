@@ -1,17 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// ✅ Import images properly (adjust path if Tours.jsx is not in src/components/pages)
+import img1 from '../../assets/images/tour-img01.jpg';
+import img2 from '../../assets/images/tour-img02.jpg';
+import img3 from '../../assets/images/tour-img03.jpg';
+import img4 from '../../assets/images/tour-img04.jpg';
+import img5 from '../../assets/images/tour-img05.jpg';
+import img6 from '../../assets/images/tour-img06.jpg';
+import img7 from '../../assets/images/tour-img07.jpg';
+
 const Tours = () => {
   const tourData = [
-    // Sample data, replace with actual data
-    { imgSrc: '/src/assets/images/tour-img01.jpg', location: 'Paris', rating: '4.5', price: '1200 INR' },
-    { imgSrc: '/src/assets/images/tour-img02.jpg', location: 'New York', rating: '4.7', price: '1500 INR' },
-    { imgSrc: '/src/assets/images/tour-img03.jpg', location: 'Tokyo', rating: '4.6', price: '1300 INR' },
-    { imgSrc: '/src/assets/images/tour-img04.jpg', location: 'Sydney', rating: '4.8', price: '1400 INR' },
-    { imgSrc: '/src/assets/images/tour-img05.jpg', location: 'London', rating: '4.4', price: '1100 INR' },
-    { imgSrc: '/src/assets/images/tour-img06.jpg', location: 'Rome', rating: '4.5', price: '1250 INR' },
-    { imgSrc: '/src/assets/images/tour-img07.jpg', location: 'Dubai', rating: '4.9', price: '1600 INR' },
-    { imgSrc: '/src/assets/images/tour-img01.jpg', location: 'Istanbul', rating: '4.3', price: '1150 INR' }
+    { imgSrc: img1, location: 'Paris', rating: '4.5', price: '1200 INR' },
+    { imgSrc: img2, location: 'New York', rating: '4.7', price: '1500 INR' },
+    { imgSrc: img3, location: 'Tokyo', rating: '4.6', price: '1300 INR' },
+    { imgSrc: img4, location: 'Sydney', rating: '4.8', price: '1400 INR' },
+    { imgSrc: img5, location: 'London', rating: '4.4', price: '1100 INR' },
+    { imgSrc: img6, location: 'Rome', rating: '4.5', price: '1250 INR' },
+    { imgSrc: img7, location: 'Dubai', rating: '4.9', price: '1600 INR' },
+    { imgSrc: img1, location: 'Istanbul', rating: '4.3', price: '1150 INR' } // reused img1
   ];
 
   return (
@@ -40,12 +48,11 @@ const Tours = () => {
                   <p className="text-yellow-600 mb-2">Rating: {tour.rating}</p>
                   <p className="text-gray-300 mb-4">Price: {tour.price} / per person</p>
                   <Link
-  to="/book"
-  className="px-4 py-2 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transform transition-transform duration-300 ease-in-out hover:scale-105"
->
-  Book Now
-</Link>
-
+                    to="/book"
+                    className="px-4 py-2 bg-yellow-600 text-white font-semibold rounded-lg hover:bg-yellow-700 transform transition-transform duration-300 ease-in-out hover:scale-105"
+                  >
+                    Book Now
+                  </Link>
                 </div>
               </div>
             </div>
@@ -57,4 +64,3 @@ const Tours = () => {
 };
 
 export default Tours;
-

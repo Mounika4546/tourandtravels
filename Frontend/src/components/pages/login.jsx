@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import loginImage from '../../assets/images/login.png';
+
+
 const Login = ({ setIsLoggedIn }) => {
   const [formData, setFormData] = useState({
     email: '',
@@ -53,7 +56,7 @@ const Login = ({ setIsLoggedIn }) => {
         {/* Left Side: Illustration */}
         <div className="w-1/2 p-6 bg-orange-100 rounded-l-lg flex items-center justify-center">
           <img
-            src="/src/assets/images/login.png"
+            src={loginImage}
             alt="Illustration"
             className="w-full"
           />

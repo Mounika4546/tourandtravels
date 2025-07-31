@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import img1 from '../../assets/images/tour-img01.jpg';
+import img2 from '../../assets/images/tour-img02.jpg';
+import img3 from '../../assets/images/tour-img03.jpg';
+import img4 from '../../assets/images/tour-img04.jpg';
+
 const SpecialOffers = () => {
   const offers = [
     {
       id: 1,
-      image: '/src/assets/images/tour-img01.jpg',
+      image: img1,
       title: 'Amazing Adventure',
       location: 'Himalayas',
       originalPrice: '₹25,000',
@@ -14,7 +19,7 @@ const SpecialOffers = () => {
     },
     {
       id: 2,
-      image: '/src/assets/images/tour-img02.jpg',
+      image: img2,
       title: 'Beach Bliss',
       location: 'Goa',
       originalPrice: '₹15,000',
@@ -24,7 +29,7 @@ const SpecialOffers = () => {
     },
     {
       id: 3,
-      image: '/src/assets/images/tour-img03.jpg',
+      image: img3,
       title: 'City Lights',
       location: 'Mumbai',
       originalPrice: '₹10,000',
@@ -34,7 +39,7 @@ const SpecialOffers = () => {
     },
     {
       id: 4,
-      image: '/src/assets/images/tour-img04.jpg',
+      image: img4,
       title: 'Desert Safari',
       location: 'Rajasthan',
       originalPrice: '₹22,000',
@@ -43,6 +48,7 @@ const SpecialOffers = () => {
       description: 'Experience the mystique of the desert with our safari tour. Book now to take advantage of our special discount!',
     },
   ];
+  
 
   return (
     <main className="bg-yellow-50 py-16 px-4">
