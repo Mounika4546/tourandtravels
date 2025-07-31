@@ -8,7 +8,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('https://tour-znrn.onrender.com/api/form/contact', {
+      const response = await fetch('https://tourandtravel-ku2q.onrender.com/api/form/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
