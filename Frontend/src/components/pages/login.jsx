@@ -21,7 +21,7 @@ const Login = ({ setIsLoggedIn }) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://tour-znrn.onrender.com/api/auth/login', {
+      const response = await fetch('https://tourandtravel-ku2q.onrender.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
